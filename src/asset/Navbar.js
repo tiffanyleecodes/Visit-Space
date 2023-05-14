@@ -42,9 +42,7 @@ function Navbar() {
           <NavLink
             to="/"
             onClick={handleLinkClick}
-            className={
-              window.location.pathname === "/" ? "border-b-2 pb-1" : ""
-            }
+            className={isActive("/") ? "border-b-2 pb-1" : " "}
           >
             <li className="my-6 tracking-widest uppercase hover:underline tablet:hover:no-underline">
               <span className="font-bold mr-2 tablet:hidden desktop:inline-block">
@@ -56,11 +54,7 @@ function Navbar() {
           <NavLink
             to="/Destination"
             onClick={handleLinkClick}
-            className={
-              window.location.pathname === "/Destination"
-                ? "border-b-2 pb-1"
-                : ""
-            }
+            className={isActive("/Destination") ? "border-b-2 pb-1" : " "}
           >
             <li className="my-6 tracking-widest uppercase  hover:underline  tablet:hover:no-underline">
               <span className="font-bold mr-2 tablet:hidden desktop:inline-block">
@@ -73,9 +67,7 @@ function Navbar() {
           <NavLink
             to="/Crew"
             onClick={handleLinkClick}
-            className={
-              window.location.pathname === "/Crew" ? "border-b-2 pb-1" : ""
-            }
+            className={isActive("/Crew") ? "border-b-2 pb-1" : " "}
           >
             <li className="my-6 tracking-widest uppercase  hover:underline  tablet:hover:no-underline">
               <span className="font-bold mr-2 tablet:hidden desktop:inline-block">
@@ -87,11 +79,7 @@ function Navbar() {
           <NavLink
             to="/Technology"
             onClick={handleLinkClick}
-            className={
-              window.location.pathname === "/Technology"
-                ? "border-b-2 pb-1"
-                : ""
-            }
+            className={isActive("/Technology") ? "border-b-2 pb-1" : " "}
           >
             <li className="my-6 tracking-widest uppercase  hover:underline  tablet:hover:no-underline">
               <span className="font-bold mr-2 tablet:hidden desktop:inline-block">
